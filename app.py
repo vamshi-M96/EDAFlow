@@ -20,6 +20,48 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.divider()
 
+with st.expander("📘 EDAFlow – Quick Visual Guide", expanded=False):
+    st.markdown("""
+    <style>
+        .workflow-expander {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 14px 18px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #1c1c1c;
+            margin-top: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .workflow-expander span {
+            display: flex;
+            align-items: center;
+        }
+        .workflow-expander span::after {
+            content: "⟶";
+            margin: 0 10px;
+            color: #999;
+        }
+        .workflow-expander span:last-child::after {
+            content: "";
+            margin: 0;
+        }
+    </style>
+
+    <div class="workflow-expander">
+        <span>🗂️ Upload</span>
+        <span>⚙️ Choose Step</span>
+        <span>🔄 Switch Steps</span>
+        <span>📊 View Output</span>
+        <span>💾 Download</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+st.divider()
+
 
 
 # Upload
