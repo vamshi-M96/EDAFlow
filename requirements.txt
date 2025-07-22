@@ -1,8 +1,8 @@
 streamlit
-git+https://github.com/vamshi-M96/streamlit-elements.git
 pandas
-numpy
-matplotlib
 seaborn
+matplotlib
+numpy
 scikit-learn
-plotly
+scipy
+ppscore
