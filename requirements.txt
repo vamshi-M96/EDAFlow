@@ -20,6 +20,7 @@ markupsafe
 matplotlib
 narwhals
 numpy
+openpyxl
 packaging
 pandas
 pillow
