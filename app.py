@@ -27,7 +27,7 @@ with st.expander("📘 EDAFlow – Quick Visual Guide", expanded=False):
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: linear-gradient(to right, #00c9ff, #92fe9d);
+            background-color: purple;
             padding: 14px 18px;
             border-radius: 10px;
             font-size: 16px;
