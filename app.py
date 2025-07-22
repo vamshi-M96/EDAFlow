@@ -22,8 +22,8 @@ st.divider()
 
 with st.expander("📘 EDAFlow – Quick Visual Guide", expanded=False):
     st.markdown("""
-    <div style='text-align: center; font-size: 18px; font-weight: 600; margin-top: 10px;'>
-        🗂️ Upload → ⚙️ Choose Step → 🔄 Switch Steps → 📊 View Output → 💾 Download
+    <div style='text-align: center; font-size: 28px; font-weight: 600; margin-top: 10px;'>
+        🗂️ Upload  →  ⚙️ Choose Step  →  🔄 Switch Steps  →  📊 View Output  → 💾 Download
     </div>
     """, unsafe_allow_html=True)
 
