@@ -85,7 +85,17 @@ for i, step in enumerate(st.session_state.eda_pipeline):
 
 # Process File
 if uploaded_file:
-    df = pd.read_csv(uploaded_file)
+        # 📊 Load CSV or Excel
+    if uploaded_file.type == "text/csv":
+        df = pd.read_csv(uploaded_file, encoding="latin1")
+    else:
+        excel_file = pd.ExcelFile(uploaded_file, engine='openpyxl')
+        if len(excel_file.sheet_names) > 1:
+            sheet = st.radio('📄 Select sheet', excel_file.sheet_names)
+            df = pd.read_excel(excel_file, sheet_name=sheet)
+        else:
+            df = pd.read_excel(uploaded_file)
+
     df_working = df.copy()
 
     st.markdown("### 🧪 Original Data Preview")
