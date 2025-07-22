@@ -27,7 +27,7 @@ with st.expander("📘 EDAFlow – Quick Visual Guide", expanded=False):
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: blue;
+            background-color: orange;
             padding: 14px 18px;
             border-radius: 10px;
             font-size: 16px;
