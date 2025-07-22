@@ -23,7 +23,8 @@ st.divider()
 
 
 # Upload
-uploaded_file = st.sidebar.file_uploader("📂 Upload a CSV file", type=["csv"])
+uploaded_file = st.file_uploader("Upload your dataset", type=["csv", "xlsx"])
+
 
 # EDA Operation List
 eda_ops = {
