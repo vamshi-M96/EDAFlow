@@ -1,0 +1,8 @@
+streamlit
+git+https://github.com/okld/streamlit-elements.git
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+plotly
