@@ -18,6 +18,7 @@ st.markdown("""
 <h1 style='text-align: center; font-size: 40px;'>💡 EDAFlow – Smooth, Modular Exploratory Data Analysis</h1>
 <p style='text-align: center; font-size: 18px;'>✨ Build your EDA pipeline effortlessly with interactive components 🔍📊</p>
 """, unsafe_allow_html=True)
+st.divider()
 
 
 
