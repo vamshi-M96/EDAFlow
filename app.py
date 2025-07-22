@@ -22,41 +22,8 @@ st.divider()
 
 with st.expander("📘 EDAFlow – Quick Visual Guide", expanded=False):
     st.markdown("""
-    <style>
-        .workflow-expander {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #1c7430;
-            padding: 14px 18px;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 500;
-            color: #1c1c1c;
-            margin-top: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-        }
-        .workflow-expander span {
-            display: flex;
-            align-items: center;
-        }
-        .workflow-expander span::after {
-            content: "⟶";
-            margin: 0 10px;
-            color: #999;
-        }
-        .workflow-expander span:last-child::after {
-            content: "";
-            margin: 0;
-        }
-    </style>
-
-    <div class="workflow-expander">
-        <span>🗂️ Upload</span>
-        <span>⚙️ Choose Step</span>
-        <span>🔄 Switch Steps</span>
-        <span>📊 View Output</span>
-        <span>💾 Download</span>
+    <div style='text-align: center; font-size: 18px; font-weight: 600; margin-top: 10px;'>
+        🗂️ Upload → ⚙️ Choose Step → 🔄 Switch Steps → 📊 View Output → 💾 Download
     </div>
     """, unsafe_allow_html=True)
 
