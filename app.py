@@ -88,7 +88,7 @@ if uploaded_file:
     df_working = df.copy()
 
     st.markdown("### 🧪 Original Data Preview")
-    st.dataframe(df.head())
+    st.dataframe(df)
     st.divider()
  
     buffer = io.StringIO()
