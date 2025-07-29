@@ -461,3 +461,51 @@ if uploaded_file:
     st.dataframe(df_working.head())
     csv = df_working.to_csv(index=False).encode('utf-8')
     st.download_button("📥 Download Processed CSV", csv, "processed_data.csv", "text/csv")
+
+
+
+
+
+st.markdown(
+    """
+    <style>
+    .edaflow-footer {
+        margin-top: 60px;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Segoe UI', sans-serif;
+        border-top: 1px solid #e1e4e8;
+        color: #4b5563;
+    }
+
+    .edaflow-footer .app-name {
+        font-weight: bold;
+        color: #6366f1; /* Indigo-500 */
+    }
+
+    .edaflow-footer .author {
+        font-weight: 600;
+        color: #10b981; /* Emerald-500 */
+    }
+
+    .edaflow-footer .tools {
+        font-weight: 500;
+        color: #f97316; /* Orange-500 */
+    }
+
+    .edaflow-footer a {
+        text-decoration: none;
+        color: #10b981;
+    }
+    </style>
+
+    <div class="edaflow-footer">
+        📊 <span class="app-name">EDAflow</span> by 
+        <span class="author"><a href="https://www.linkedin.com/in/meka-vamshi-/" target="_blank">Vamshi ⚡</a></span> | 
+        <span class="tools">Built with ❤️ using Streamlit 🌐 + ChatGPT 🤖</span>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
