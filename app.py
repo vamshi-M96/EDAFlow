@@ -118,7 +118,7 @@ if uploaded_file:
     st.code(info_string)
 
     if st.checkbox("Description"):
-        st.dataframe(df.describe(df))
+        st.dataframe(df.describe())
         
 
     for idx, step_type in enumerate(st.session_state.eda_pipeline):
