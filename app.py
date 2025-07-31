@@ -116,7 +116,10 @@ if uploaded_file:
     df.info(buf=buffer)
     info_string = buffer.getvalue()
     st.code(info_string)
-    
+
+    if st.checkbox("Description"):
+        st.dataframe(describe(df))
+        
 
     for idx, step_type in enumerate(st.session_state.eda_pipeline):
         st.divider()
